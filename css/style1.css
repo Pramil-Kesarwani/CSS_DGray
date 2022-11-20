@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* css grid */
+.css-grid{
+    font-family: monospace;
+    min-height: 80vh;
+}
+.css-grid .container{
+    display: grid;
+}
+.css-grid .container .box{
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+/* css flexbox */
+.css-flexbox{
+    font-family: monospace;
+    min-height: 150vh;
+    padding: 20px;
+}
+.css-flexbox .container{
+    max-width: 1000px;
+    min-height: 500px;
+    margin-inline: auto;
+    border: 1px solid ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.css-flexbox .container .box{
+    min-width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 1px white solid;
+}
+
+/* css position */
+.css-position{
+    font-family: monospace;
+    font-size: 1.5rem;
+    min-height: 180vh;
+}
+.css-position .outer-container{
+    border: 3px dotted black;
+    width: 45vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+.css-position .inner-container{
+    border: 2px solid blue;
+    height: 85%;
+    width: 65%;
+    margin: 40px auto;
+}
+.inner-container .box{
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+}
+.inner-container .absolute{
+    background-color: blue;
+    /* position: static; */
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.inner-container .relative{
+    background-color: red;
+    position: relative;
+    top: 25%;
+    left: 65%;
+}
+.inner-container .fixed{
+    background-color: green;
+    position: fixed;
+    top: 13%;
+    left: 44%;
+    z-index: 1;
+    /* z-index: -1; */
+}
+.inner-container .sticky{
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+}
+
+/* CSS columns */
+.css-columns{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+.css-columns .columns{
+    /* column-count: 4;
+    column-width: 250px; */
+    columns: 4 250px;
+    column-rule: 3px solid gray;
+
+}
+.css-columns p{
+    margin-top: 0;
+}
+.columns h2{
+    background-color: black;
+    color: white;
+    margin-top: 0;
+    padding: 1rem;
+    break-inside: avoid;
+} 
+.columns .nowrap{
+    white-space: nowrap;
+    font-size: small;
+
+}
+
+/* CSS Floats */
+.css-float{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.css-float .block{
+    width: 10vw;
+    height: 10vw;
+    background-color: black;
+    color: whitesmoke;
+    padding: 1rem;
+    /* float: right; */
+    text-align: center;
+}
+
+/* CSS Display */
+.css-display{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.css-display main{
+    background-color: aqua;
+    width: 50%;
+}
+.css-display .opposite{
+    color: black;
+    background-color: gold;
+    display: inline-block;
+    margin: 10px ;
+    padding: 10px;
+}
+.css-display ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    text-align: end;
+    background-color: black;
+}
+.css-display li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+.css-display li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.css-display li a:hover,.css-display li a:focus{
+    text-decoration: underline;
+}
+
+/* nav bar mini project */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap'); 
+.nav-bar{
+    font-family: 'Raleway', sans-serif;
+    /* font-weight: 900; */
+    text-align: center;
+    /* margin: 1.5rem; */
+    padding: 20px 0;
+    background-color: rgb(213, 142, 56);
+}
+.nav-bar nav{
+    border: 2px solid gray;
+    border-radius: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    background-color: whitesmoke;
+}
+.nav-bar li{
+    border-top: 1px solid gray;
+}
+.nav-bar ul{
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.nav-bar h2{
+    margin: 0;
+    padding: 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0;
+}
+.nav-bar li a{
+    text-decoration: none;
+    display: block;
+    transition: 500ms;
+}
+.nav-bar li a:visited {
+    /* color: gray; */
+}
+.nav-bar li a:hover,.nav-bar li a:focus{
+    color: whitesmoke;
+    cursor: pointer;
+    background-color: gray;
+    transition: 500ms;
+    transform: scale(0.5);
+    border-radius: 10px;
+}
+.nav-bar li:last-child a{
+    border-radius: 0 0 2rem 2rem;
+}
+
+/* styling list */
+.list{
+    padding: 5% 10%;
+    font-size: 2rem;
+    font-family: sans-serif;
+    background-color: bisque;
+}
+.list ol{
+    list-style-type: lower-alpha;
+}
+.list ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: blue;
+    line-height: 1.5;
+    /* list-style-image: url("images/5842a770a6515b1e0ad75afe.png"); */
+}
+.list ul li:nth-child(odd){
+    color: green;
+}
+.list ul ::marker{
+    color: tomato;
+    font-size: 1em;
+    content: "only 100Rs >> ";
+}
+    
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap'); */
+
+.fourth{
+    padding: 5%;
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: monospace;
+    /* font-family: 'Raleway', sans-serif; */
+
+}
+.fourth p{
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.fourth #span1{
+    text-transform: uppercase;
+}
+.fourth #span2{
+    /* text-decoration: underline; */
+    text-decoration: line-through;
+}
+button,input {
+    font: inherit;
+}
+
+.third{
+    background-color: rgb(232, 142, 33);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.circle{
+    box-sizing: border-box;
+    background-color: gold;
+    height: 200px;
+    width: 200px;
+    border: 2px solid;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+    border-radius: 100px;
+}
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+.second h1{
+    border: 10px double red;
+    outline: 5px solid blue;
+    outline-offset: 5px;
+    width: 500px;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+.first{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1.2; */
+    background-color: rgb(234, 123, 5);
+    color: darkblue;
+    
+}
+.first p{
+    color: rgba(0, 0, 0, 0.5);
+    /* rem - relative to root element font-size : 16px */
+    /* em - relative to its parent font-size */
+    /* font-size: 2rem;  */
+}
+/* body{
+    background-color: rgb(248, 164, 6);
+} */
